@@ -1,0 +1,16 @@
+{
+  "name": "ai-image",
+  "version": "1.0.0",
+  "main": "/server/src/app.ts",
+  "repository": "https://github.com/dhavalCode/ai-image-generator",
+  "author": "Dhaval Patel",
+  "license": "MIT",
+  "scripts": {
+    "server-build": "cd server && yarn install && rimraf build && yarn build",
+    "client-build": "cd client && yarn install && rimraf dist && yarn build",
+    "build": "yarn install && yarn client-build && yarn server-build"
+  },
+  "devDependencies": {
+    "rimraf": "^5.0.0"
+  }
+}
